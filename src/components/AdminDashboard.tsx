@@ -114,7 +114,7 @@ export default function AdminDashboard({
               Administrative Overview & Controls
             </h1>
             <p className="text-slate-300 text-xs leading-relaxed font-sans">
-              Consolidated grid dispatch boards, overhead water distribution valves, and citizen skill directories for Panchayat management.
+              Consolidated power dispatch boards, overhead water distribution valves, and citizen skill directories for Panchayat management.
             </p>
           </div>
           
@@ -135,7 +135,7 @@ export default function AdminDashboard({
         {/* Stat 1 */}
         <div className="bg-navy-light border border-accent-blue/15 p-5 rounded-2xl shadow-sm flex items-center justify-between">
           <div className="space-y-1">
-            <p className="text-[10px] text-slate-400 uppercase font-mono tracking-wider">Active Grid Faults</p>
+            <p className="text-[10px] text-slate-400 uppercase font-mono tracking-wider">Active Power Faults</p>
             <p className="text-2xl font-bold font-mono text-white mt-1">{unresolvedFaultsCount}</p>
             <p className="text-[10px] text-amber-400 flex items-center gap-1">
               <AlertTriangle className="w-3.5 h-3.5" /> Direct routing active
@@ -193,7 +193,7 @@ export default function AdminDashboard({
         {/* INTERACTIVE COMPLAINT DISPATCH CONTROLLER (60% width) */}
         <div className="lg:col-span-8 bg-navy-light border border-accent-blue/15 rounded-2xl p-6 shadow-sm space-y-4">
           <div>
-            <h3 className="font-display font-bold text-base text-white">Grid Dispatch Workflow Monitor</h3>
+            <h3 className="font-display font-bold text-base text-white">Power Dispatch Workflow Monitor</h3>
             <p className="text-slate-400 text-xs mt-1">
               Admin workflow tool: Click the "Advance Workflow" button to step complaints through routing states.
             </p>
@@ -273,7 +273,7 @@ export default function AdminDashboard({
       {/* QUICK WATER VALVE CONTROLS */}
       <div className="bg-navy-light border border-accent-blue/15 rounded-2xl p-6 shadow-sm space-y-4">
         <div>
-          <h3 className="font-display font-bold text-base text-white">Water Grid Emergency Valve Overrides</h3>
+          <h3 className="font-display font-bold text-base text-white">Water Supply Emergency Valve Overrides</h3>
           <p className="text-slate-450 text-xs mt-1">
             Manually trigger and force overhead water release flow without altering existing block schedules.
           </p>

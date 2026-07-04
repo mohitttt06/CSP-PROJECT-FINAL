@@ -100,7 +100,7 @@ export default function Hero({ setCurrentTab, stats }: HeroProps) {
             <div className="flex flex-col justify-center p-2">
               <span className="text-[10px] font-mono tracking-wider uppercase text-slate-400">Outage Complaints</span>
               <span className="text-2xl font-bold font-mono text-white mt-1">{stats.activeComplaints} Active</span>
-              <span className="text-[10px] text-accent-blue mt-0.5">{stats.resolvedComplaints} Grid Faults Solved</span>
+              <span className="text-[10px] text-accent-blue mt-0.5">{stats.resolvedComplaints} Power Faults Solved</span>
             </div>
 
             <div className="flex flex-col justify-center p-2 pt-4 md:pt-2">
@@ -143,9 +143,9 @@ export default function Hero({ setCurrentTab, stats }: HeroProps) {
             <div className="p-1.5 w-9 h-9 rounded-lg bg-accent-blue/10 text-accent-blue flex items-center justify-center">
               <Zap className="w-4 h-4" />
             </div>
-            <h3 className="text-lg font-bold font-display text-white">Electricity Service Grid</h3>
+            <h3 className="text-lg font-bold font-display text-white">Electricity & Power Service</h3>
             <p className="text-xs text-slate-400 leading-relaxed">
-              Report and resolve microgrid faults with instant lineman assignments and live tracking.
+              Report and resolve local power line faults with instant lineman assignments and live tracking.
             </p>
             <button
               onClick={() => setCurrentTab('electricity')}

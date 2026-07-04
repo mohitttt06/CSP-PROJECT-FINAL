@@ -7,6 +7,7 @@ import CropIntelligence from './components/CropIntelligence';
 import EmploymentHub from './components/EmploymentHub';
 import AboutSection from './components/AboutSection';
 import AdminDashboard from './components/AdminDashboard';
+import { generateTechStackPDF } from './utils/pdfGenerator';
 import { 
   InitialComplaints, 
   InitialWaterSchedules, 
@@ -128,6 +129,7 @@ export default function App() {
               <li><button onClick={() => setCurrentTab('about')} className="hover:text-accent-blue text-left cursor-pointer transition-colors">Mission & Goals</button></li>
               <li><button onClick={() => setCurrentTab('contact')} className="hover:text-accent-blue text-left cursor-pointer transition-colors">BDO Support Helpline</button></li>
               <li><button onClick={() => setCurrentTab('admin')} className="hover:text-accent-blue text-left cursor-pointer transition-colors">Panchayat Administration Terminal</button></li>
+              <li><button onClick={generateTechStackPDF} className="text-accent-cyan font-semibold hover:text-accent-blue hover:underline text-left cursor-pointer transition-all">📋 Download Tech Stack PDF</button></li>
             </ul>
           </div>
 

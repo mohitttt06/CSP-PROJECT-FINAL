@@ -153,14 +153,14 @@ export default function ElectricityService({ complaints, setComplaints }: Electr
               Panchayat Electrical Utility
             </span>
             <h1 className="text-2xl sm:text-3xl font-extrabold font-display tracking-tight text-white">
-              Electricity Grid Helpdesk
+              Electricity & Power Helpdesk
             </h1>
             <p className="text-slate-350 text-xs leading-relaxed font-sans">
-              Log outages and microgrid issues. Reports are automatically routed to ward technicians with live dispatch tracking.
+              Log outages and local electrical line issues. Reports are automatically routed to ward technicians with live dispatch tracking.
             </p>
           </div>
           <div className="bg-navy-dark p-4 rounded-xl border border-accent-blue/15 shrink-0">
-            <p className="text-[9px] uppercase font-mono tracking-wider text-accent-blue">Panchayat Grid Status</p>
+            <p className="text-[9px] uppercase font-mono tracking-wider text-accent-blue">Panchayat Power Status</p>
             <p className="text-lg font-bold font-display text-white mt-0.5">Stable Line (220V)</p>
             <div className="flex items-center gap-1 mt-1 text-[11px] text-accent-cyan">
               <span className="w-1.5 h-1.5 rounded-full bg-accent-cyan animate-pulse"></span>
@@ -214,7 +214,7 @@ export default function ElectricityService({ complaints, setComplaints }: Electr
           <div className="flex items-center gap-2 mb-4">
             <Zap className="w-5 h-5 text-accent-blue" />
             <h2 className="text-base font-bold font-display text-white">
-              File Grid Grievance
+              File Power Grievance
             </h2>
           </div>
 

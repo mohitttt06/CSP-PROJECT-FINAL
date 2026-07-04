@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Landmark, Shield, Milestone, HeartHandshake, Phone, Mail, MapPin, Send, CheckCircle2 } from 'lucide-react';
+import { Landmark, Shield, Milestone, HeartHandshake, Phone, Mail, MapPin, Send, CheckCircle2, Cpu, FileText, Download } from 'lucide-react';
+import { generateTechStackPDF } from '../utils/pdfGenerator';
 
 export default function AboutSection() {
   const [name, setName] = useState('');
@@ -220,6 +221,33 @@ export default function AboutSection() {
           </div>
         </div>
 
+      </div>
+
+      {/* TECH STACK SPECIFICATION & PDF DOWNLOAD CARD */}
+      <div id="tech-stack-pdf-card" className="bg-navy-light text-white rounded-2xl border border-accent-blue/15 p-6 sm:p-8 shadow-xl">
+        <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+          <div className="space-y-2 max-w-xl text-left">
+            <span className="inline-flex items-center gap-1 text-[9px] font-bold font-mono uppercase bg-accent-blue/10 text-accent-blue px-2.5 py-1 rounded-full border border-accent-blue/20">
+              <Cpu className="w-3 h-3 text-accent-cyan" />
+              Platform Technical Spec
+            </span>
+            <h3 className="text-lg sm:text-xl font-extrabold font-display tracking-tight text-white">
+              System Architecture & Tech Stack Document
+            </h3>
+            <p className="text-slate-300 text-xs leading-relaxed font-sans">
+              Download the official verified system architecture report. This documents our complete responsive frontend stack, Gemini AI diagnostic subsystems, and real-time utility telemetry engineering.
+            </p>
+          </div>
+          <button 
+            id="btn-download-tech-pdf"
+            onClick={generateTechStackPDF}
+            className="inline-flex items-center gap-2 px-5 py-3 rounded-xl text-xs font-bold bg-accent-blue hover:bg-accent-cyan text-navy-dark transition-all self-start md:self-center shrink-0 cursor-pointer shadow-md"
+          >
+            <FileText className="w-4 h-4" />
+            <span>Download PDF Specification</span>
+            <Download className="w-3.5 h-3.5 animate-bounce" />
+          </button>
+        </div>
       </div>
 
     </div>
